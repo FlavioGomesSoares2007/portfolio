@@ -6,7 +6,7 @@ export const Home = () => {
       <S.Image>
         <S.Detail>Olá, tudo bem?</S.Detail>
         <S.Name>Meu nome é Flávio</S.Name>
-        <S.Detail>Desenvolvidor Back-end</S.Detail>
+        <S.Detail>Desenvolvidor Full-stack</S.Detail>
       </S.Image>
     </>
   );
