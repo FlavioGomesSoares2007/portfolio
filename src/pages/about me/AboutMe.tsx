@@ -1,7 +1,5 @@
 import * as S from "./AboutMe.style";
 
-const openNetworks = (Link: string) => {};
-
 export const AboutMe = () => {
   return (
     <>
