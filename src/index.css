@@ -1,22 +1,20 @@
+
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box; 
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
+html, body {
   background-color: #1F1F1F;
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
   
-  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 body::-webkit-scrollbar {
-  display: none; 
-}
-
-html {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  display: none;
 }
