@@ -30,6 +30,10 @@ export const Text = styled.p`
   margin-left: 7%;
   width: 40%;
   color: #ffffff;
+
+  @media (max-width: 350px) {
+    width: 80%;
+  }
 `;
 
 export const Span = styled.span`
@@ -41,8 +45,8 @@ export const Image = styled.article`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 37dvw;
-  height: 45dvh;
+  width: 40dvw;
+  height: 40dvh;
 
   position: relative;
   top: -22%;
@@ -50,15 +54,50 @@ export const Image = styled.article`
 
   border-radius: 20px;
 
-  @media (min-width: 530px) {
-    height: 70dvh;
-    top: -13%;
-    width: 25dvw;
+  @media (max-width: 350px) {
+    display: none;
+  }
+
+  @media (min-width: 350px) {
+    height: 60dvh;
+    top: -45%;
+    width: 35dvw;
     left: 60%;
   }
 
-  @media (max-width: 320px) {
-    display: none;
+  @media (min-width: 450px) {
+    height: 60dvh;
+    top: -35%;
+    width: 35dvw;
+    left: 60%;
+  }
+
+  @media (min-width: 550px) {
+    height: 60dvh;
+    top: -29%;
+    width: 35dvw;
+    left: 60%;
+  }
+
+  @media (min-width: 700px) {
+    height: 60dvh;
+    top: -23%;
+    width: 35dvw;
+    left: 60%;
+  }
+
+   @media (min-width: 800px) {
+    height: 60dvh;
+    top: -25%;
+    width: 35dvw;
+    left: 60%;
+  }
+
+  @media (min-width: 950px) {
+    height: 60dvh;
+    top: -20%;
+    width: 35dvw;
+    left: 60%;
   }
 `;
 
@@ -69,7 +108,7 @@ export const Networks = styled.div`
   margin-left: 2%;
 
   position: relative;
-  top: -38%;
+  top: -33%;
 
   display: flex;
   gap: 5%;
@@ -77,8 +116,24 @@ export const Networks = styled.div`
   align-items: center;
   flex-direction: column;
 
-  @media (min-width: 530px) {
-    top: -55%;
+  @media (min-width: 150px) {
+    top: 0%;
+  }
+
+  @media (min-width: 350px) {
+    top: -50%;
+  }
+
+  @media (min-width: 450px) {
+    top: -50%;
+  }
+
+  @media (min-width: 500px) {
+    top: -50%;
+  }
+
+  @media (min-width: 550px) {
+    top: -50%;
   }
 `;
 
@@ -90,13 +145,24 @@ export const Button = styled.a`
   color: #ffff;
 
   height: 5dvh;
-  width: 28dvw;
+  width: 38dvw;
   display: flex;
   align-items: center;
   justify-content: center;
 
   text-decoration: none;
   cursor: pointer;
+
+   @media (max-width: 350px) {
+    width: 48dvw;
+    margin-left: 8%;
+  }
+
+  @media (min-width: 500px) {
+    width: 35dvb;
+    margin-left: 8%;
+  }
+
 `;
 
 export const Github = styled(FaGithub)`
@@ -107,6 +173,8 @@ export const Github = styled(FaGithub)`
 export const Linkedin = styled(FaLinkedin)`
   font-size: 150%;
   margin-right: 3%;
+
+ 
 `;
 
 export const Whatsapp = styled(FaWhatsapp)`
