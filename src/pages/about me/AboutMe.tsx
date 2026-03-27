@@ -3,7 +3,7 @@ import * as S from "./AboutMe.style";
 export const AboutMe = () => {
   return (
     <>
-      <S.AboutMe>
+      <S.Body>
         <S.Title>
           Sobre <S.YellowTitle>mim</S.YellowTitle>
         </S.Title>
@@ -35,7 +35,7 @@ export const AboutMe = () => {
             <S.Span>Whatsapp</S.Span>
           </S.Button>
         </S.Networks>
-      </S.AboutMe>
+      </S.Body>
     </>
   );
 };

@@ -3,11 +3,9 @@ import "../../index.css";
 import profile from "../../assets/profile/profile.jpeg";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
-export const AboutMe = styled.section`
+export const Body = styled.section`
   width: 99dvw;
-  height: 120dvh;
-
-  position: absolute;
+  height: 100dvh;
 `;
 
 export const Title = styled.h1`
@@ -86,7 +84,7 @@ export const Image = styled.article`
     left: 60%;
   }
 
-   @media (min-width: 800px) {
+  @media (min-width: 800px) {
     height: 60dvh;
     top: -25%;
     width: 35dvw;
@@ -121,20 +119,9 @@ export const Networks = styled.div`
   }
 
   @media (min-width: 350px) {
-    top: -50%;
+    top: -55%;
   }
 
-  @media (min-width: 450px) {
-    top: -50%;
-  }
-
-  @media (min-width: 500px) {
-    top: -50%;
-  }
-
-  @media (min-width: 550px) {
-    top: -50%;
-  }
 `;
 
 export const Button = styled.a`
@@ -153,7 +140,7 @@ export const Button = styled.a`
   text-decoration: none;
   cursor: pointer;
 
-   @media (max-width: 350px) {
+  @media (max-width: 350px) {
     width: 48dvw;
     margin-left: 8%;
   }
@@ -162,7 +149,6 @@ export const Button = styled.a`
     width: 35dvb;
     margin-left: 8%;
   }
-
 `;
 
 export const Github = styled(FaGithub)`
@@ -173,8 +159,6 @@ export const Github = styled(FaGithub)`
 export const Linkedin = styled(FaLinkedin)`
   font-size: 150%;
   margin-right: 3%;
-
- 
 `;
 
 export const Whatsapp = styled(FaWhatsapp)`
