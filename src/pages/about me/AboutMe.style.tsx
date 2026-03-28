@@ -1,41 +1,45 @@
 import styled from "styled-components";
-import "../../index.css";
 import profile from "../../assets/profile/profile.jpeg";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export const Body = styled.section`
-  width: 99dvw;
-  height: 100dvh;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  padding: 0 7%;
 `;
 
 export const Title = styled.h1`
   font-family: sans-serif;
-  margin-top: 26dvh;
-  margin-bottom: 2dvh;
-  margin-left: 7%;
-
+  font-size: 2.5rem;
   color: #ffffff;
+  margin-bottom: 1rem;
+  z-index: 2;
 `;
 
 export const YellowTitle = styled.span`
-  font-family: sans-serif;
   color: #f2ff00;
 `;
 
 export const Text = styled.p`
   font-family: sans-serif;
-
-  margin-left: 7%;
-  width: 40%;
+  width: 45%;
   color: #ffffff;
+  line-height: 1.5;
+  z-index: 2;
 
-  @media (max-width: 350px) {
-    width: 80%;
+  @media (max-width: 768px) {
+    width: 90%;
   }
 `;
 
 export const Span = styled.span`
-  font-size: 130%;
+  font-size: 1.2rem;
 `;
 
 export const Image = styled.article`
@@ -43,125 +47,64 @@ export const Image = styled.article`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 40dvw;
-  height: 40dvh;
-
-  position: relative;
-  top: -22%;
-  left: 55%;
-
+  width: 30vw;
+  height: 50vh;
   border-radius: 20px;
+  
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 
-  @media (max-width: 350px) {
+  @media (max-width: 850px) {
     display: none;
-  }
-
-  @media (min-width: 350px) {
-    height: 60dvh;
-    top: -45%;
-    width: 35dvw;
-    left: 60%;
-  }
-
-  @media (min-width: 450px) {
-    height: 60dvh;
-    top: -35%;
-    width: 35dvw;
-    left: 60%;
-  }
-
-  @media (min-width: 550px) {
-    height: 60dvh;
-    top: -29%;
-    width: 35dvw;
-    left: 60%;
-  }
-
-  @media (min-width: 700px) {
-    height: 60dvh;
-    top: -23%;
-    width: 35dvw;
-    left: 60%;
-  }
-
-  @media (min-width: 800px) {
-    height: 60dvh;
-    top: -25%;
-    width: 35dvw;
-    left: 60%;
-  }
-
-  @media (min-width: 950px) {
-    height: 60dvh;
-    top: -20%;
-    width: 35dvw;
-    left: 60%;
   }
 `;
 
 export const Networks = styled.div`
-  height: 20%;
-  width: 50%;
-
-  margin-left: 2%;
-
-  position: relative;
-  top: -33%;
-
   display: flex;
-  gap: 5%;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-
-  @media (min-width: 150px) {
-    top: 0%;
-  }
-
-  @media (min-width: 350px) {
-    top: -55%;
-  }
-
+  gap: 15px;
+  margin-top: 30px;
+  width: fit-content;
+  z-index: 2;
 `;
 
 export const Button = styled.a`
-  border: 2px, solid, #f2ff00;
-  border-radius: 15px;
-
-  background-color: #1f1f1f;
-  color: #ffff;
-
-  height: 5dvh;
-  width: 38dvw;
+  border: 2px solid #f2ff00;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #ffffff;
+  height: 45px;
+  width: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
-  cursor: pointer;
+  transition: 0.3s;
 
-  @media (max-width: 350px) {
-    width: 48dvw;
-    margin-left: 8%;
+  &:hover {
+    background-color: #f2ff00;
+    color: #1f1f1f;
   }
 
-  @media (min-width: 510px) {
-    width: 35dvb;
-    margin-left: 8%;
+  @media (max-width: 480px) {
+    width: 180px;
   }
 `;
 
 export const Github = styled(FaGithub)`
-  font-size: 150%;
-  margin-right: 3%;
+  font-size: 1.2rem;
+  margin-right: 8px;
 `;
 
 export const Linkedin = styled(FaLinkedin)`
-  font-size: 150%;
-  margin-right: 3%;
+  font-size: 1.2rem;
+  margin-right: 8px;
 `;
 
 export const Whatsapp = styled(FaWhatsapp)`
-  font-size: 150%;
-  margin-right: 3%;
+  font-size: 1.2rem;
+  margin-right: 8px;
 `;

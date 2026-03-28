@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import photo_pc from "../../assets/home/foto_home_700_pc.jpg";
 import photo_cell from "../../assets/home/foto_home_700_cell.jpg";
-import "../../index.css";
 
 export const Image = styled.section`
   background-image: url(${photo_cell});
@@ -9,8 +8,8 @@ export const Image = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 100dvh;
-  width: 100dvw;
+  width: 100%;
+  min-height: 100dvh;
 
   display: flex;
   align-items: center;
@@ -24,24 +23,16 @@ export const Image = styled.section`
 
 export const Name = styled.span`
   color: #ffffff;
-  font-size: 10dvw;
-  @media (min-width: 550px) {
-    font-size: 8dvw;
-  }
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: clamp(2.5rem, 10vw, 6rem);
+  text-align: center;
 `;
 
 export const Detail = styled.span`
   color: #bcbcbc;
-  font-size: 5dvw;
   font-family: sans-serif;
-
-  margin-top: -1dvw;
-  margin-bottom: -1dvw;
-
-  @media (min-width: 550px) {
-    font-size: 3dvw;
-
-    margin-top: -1dvw;
-    margin-bottom: -1.3dvw;
-  }
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  text-align: center;
+  margin-top: 5px;
 `;
