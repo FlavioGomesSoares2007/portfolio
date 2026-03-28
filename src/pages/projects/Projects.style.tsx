@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Body = styled.section`
   width: 99dvw;
-  height: 80dvh;
+  height: 100dvh;
 `;
 
 export const Title = styled.h1`
   font-family: sans-serif;
+  font-size: 400%;
   margin-top: 26dvh;
   margin-bottom: 2dvh;
   margin-left: 7%;
@@ -14,8 +15,23 @@ export const Title = styled.h1`
   color: #f2ff00;
 `;
 
+export const Text = styled.p`
+  font-family: sans-serif;
+  font-size: 130%;
+
+  margin-left: 7%;
+  margin-bottom: 3%;
+
+  width: 90%;
+  color: #ffffff;
+
+  @media (max-width: 350px) {
+    width: 80%;
+  }
+`;
+
 export const ProjectWrapper = styled.div`
-  background-color: transparent; 
+  background-color: transparent;
   width: 92dvw;
   height: 72dvh;
   margin-left: 7%;
@@ -26,22 +42,21 @@ export const ProjectWrapper = styled.div`
   padding-bottom: 15px;
 
   &::-webkit-scrollbar {
-    height: 8px; 
+    height: 8px;
   }
 
   &::-webkit-scrollbar-track {
-    background: #1f1f1f; 
+    background: #1f1f1f;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #f2ff00; 
-    border-radius: 10px;
+    background-color: #f2ff00;
     border: 2px solid #1f1f1f;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background-color: #d8e600; 
+    background-color: #d8e600;
   }
 
   scrollbar-width: thin;
@@ -60,8 +75,6 @@ export const DisplayBox = styled.div`
   border-radius: 5%;
 
   margin-top: 1px;
-
- 
 `;
 
 export const Image = styled.div<{ $ImageProps: string }>`
@@ -80,11 +93,11 @@ export const Image = styled.div<{ $ImageProps: string }>`
 export const Detail = styled.p`
   font-family: sans-serif;
 
-  font-size: 80%;
+  font-size: 2dvh;
 
   margin: 5% auto;
   width: 76%;
-  height: 25%;
+  height: 25dvh;
   color: #ffffff;
 `;
 
@@ -93,7 +106,7 @@ export const Networks = styled.div`
   width: 24dvb;
 
   position: relative;
-  margin: 4% auto 0 auto;
+  margin: 4% auto 2% auto;
 
   display: flex;
   align-items: center;

@@ -145,7 +145,7 @@ export const Button = styled.a`
     margin-left: 8%;
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 510px) {
     width: 35dvb;
     margin-left: 8%;
   }

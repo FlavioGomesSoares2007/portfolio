@@ -8,6 +8,14 @@ export const Projects = () => {
     <>
       <S.Body>
         <S.Title>Projetos</S.Title>
+        <S.Text>
+          Nos projetos, o Backend está hospedado no plano gratuito do Render.
+          Por economia de recursos, o servidor entra em repouso após um período
+          de inatividade. Caso o carregamento inicial demore cerca de 30
+          segundos, é apenas o sistema "acordando" para processar sua
+          requisição. Após esse início, a navegação segue em tempo real.
+          Agradeço a paciência!
+        </S.Text>
         <S.ProjectWrapper>
           <S.DisplayBox>
             <S.Image $ImageProps={discordoIMG}></S.Image>
@@ -73,7 +81,11 @@ export const Projects = () => {
           <S.DisplayBox>
             <S.Image $ImageProps={energiasIMG}></S.Image>
             <S.Detail>
-             Um site informativo desenvolvido para um trabalho de Geografia, focado na apresentação de fontes de energia limpa. O projeto foi construído utilizando apenas HTML5 e CSS3, servindo como base para consolidar o aprendizado em estruturação de tags e estilização básica de layouts.
+              Um site informativo desenvolvido para um trabalho de Geografia,
+              focado na apresentação de fontes de energia limpa. O projeto foi
+              construído utilizando apenas HTML5 e CSS3, servindo como base para
+              consolidar o aprendizado em estruturação de tags e estilização
+              básica de layouts.
             </S.Detail>
             <S.Networks>
               <S.Button
@@ -88,7 +100,6 @@ export const Projects = () => {
               >
                 GitHub do Front
               </S.Button>
-            
             </S.Networks>
           </S.DisplayBox>
         </S.ProjectWrapper>
