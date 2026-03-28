@@ -28,7 +28,7 @@ export const Projects = () => {
             </S.Detail>
             <S.Networks>
               <S.Button
-                href="https://discordo-cliente.vercel.app"
+                href="https://fgs-messenger-clone.vercel.app"
                 target="_blank"
               >
                 Visualizar Site

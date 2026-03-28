@@ -43,7 +43,9 @@ export const ProjectWrapper = styled.div`
   scroll-snap-type: x mandatory;
 
   &::-webkit-scrollbar {
+    -webkit-appearance: none;
     height: 8px;
+    display: block;
   }
   &::-webkit-scrollbar-track {
     background: #1f1f1f;
@@ -51,7 +53,11 @@ export const ProjectWrapper = styled.div`
   &::-webkit-scrollbar-thumb {
     background-color: #f2ff00;
     border-radius: 10px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   }
+
+  scrollbar-width: thin;
+  scrollbar-color: #f2ff00 #1f1f1f;
 `;
 
 export const DisplayBox = styled.div`
@@ -65,9 +71,6 @@ export const DisplayBox = styled.div`
   background-color: #1f1f1f;
   transition: transform 0.3s;
 
-  &:hover {
-    transform: translateY(-5px);
-  }
 
   @media (max-width: 400px) {
     flex: 0 0 280px;
@@ -96,11 +99,13 @@ export const Detail = styled.p`
   line-height: 1.4;
 
   &::-webkit-scrollbar {
-    height: 8px;
+    -webkit-appearance: none;
+    width: 6px;
   }
   &::-webkit-scrollbar-thumb {
     background-color: #f2ff00;
     border-radius: 10px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   }
 `;
 
@@ -129,8 +134,5 @@ export const Button = styled.a`
   font-weight: bold;
   transition: 0.3s;
 
-  &:hover {
-    background-color: #f2ff00;
-    color: #1f1f1f;
-  }
+
 `;
